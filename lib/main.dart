@@ -30,6 +30,7 @@
 // }
 
 //First wee will import library name material.dart.
+import 'package:demotest/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
+  // 90% of things we use in flutter is widget
   Widget build(BuildContext context) {
     // double pi = 3.14;
     // bool ismale = true;
@@ -54,7 +56,16 @@ class MyApp extends StatelessWidget {
     // final
 
     return MaterialApp(
-      home: HomePage(),
+      // home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => LoginPage(),
+        "/home": (context) => HomePage(),
+        "/login": (context) => LoginPage()
+      },
     );
   }
 }
