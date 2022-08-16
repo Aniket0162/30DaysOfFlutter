@@ -12,7 +12,13 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       //in scaffold we have many components
       appBar: AppBar(
-        title: Text("Catelog App"),
+        // backgroundColor: Colors.white,
+        // elevation: 0.0,
+        // iconTheme: IconThemeData(color: Colors.black),
+        title: Text(
+          "Catelog App",
+          // style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Center(
         child: Container(
