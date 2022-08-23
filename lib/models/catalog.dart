@@ -2,7 +2,7 @@ class CatalogModel {
   static final items = [
     Item(
         id: 1,
-        name: "Zoro",
+        name: "Roronoa Zoro",
         desc: "Straw Hat Right Hand Man",
         price: "1.5M",
         color: "#33505a",
